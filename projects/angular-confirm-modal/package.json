@@ -8,7 +8,6 @@
     "npm-pack": "cd dist/angular-confirm-modal",
     "package": "npm run build-lib"
   },
-  "license": "MIT",
   "repository": "https://github.com/avssolutions/angular-confirm-modal",
   "peerDependencies": {
     "@angular/common": "7.2.15",
@@ -19,7 +18,7 @@
     "@ng-bootstrap/ng-bootstrap": "^4.2.0"
   },
   "author": "Avs",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "*"
   ],
