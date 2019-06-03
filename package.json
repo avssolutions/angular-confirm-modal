@@ -1,6 +1,6 @@
 {
   "name": "avs-ng-confirm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "repository": "https://github.com/avssolutions/ng-confirmation-modal",
+  "repository": "https://github.com/avssolutions/angular-confirm-modal",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.0",
