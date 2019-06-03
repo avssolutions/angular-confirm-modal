@@ -4,10 +4,10 @@ https://www.npmjs.com/package/ng-confirmation-modal
 
 ### Installation
 
-```npm install --save ng-confirmation-modal-angular```
+```npm install --save angular-confirm-modal```
 
 ```javascript
- import { AngularConfirmModalModule } from 'ng-confirmation-modal-angular';
+ import { AngularConfirmModalModule } from 'angular-confirm-modal';
 
 
  imports: [
