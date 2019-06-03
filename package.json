@@ -1,6 +1,6 @@
 {
   "name": "avs-ng-confirm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "license": "MIT",
   "repository": "https://github.com/avssolutions/angular-confirm-modal",
   "private": true,
   "dependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "angular-confirm-modal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "types": "./dist/angular-confirm-modal/angular-confirm-modal.d.ts",
   "main": "index.ts",
   "scripts": {
@@ -8,6 +8,7 @@
     "npm-pack": "cd dist/angular-confirm-modal",
     "package": "npm run build-lib"
   },
+  "license": "MIT",
   "repository": "https://github.com/avssolutions/angular-confirm-modal",
   "peerDependencies": {
     "@angular/common": "7.2.15",
