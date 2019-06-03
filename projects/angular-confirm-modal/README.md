@@ -1,24 +1,70 @@
-# AngularConfirmModal
+## Angular 7 Confirmation Modal using ng-bootstrap's modal
+Thanks to https://github.com/ybrodsky, and his version 
+https://www.npmjs.com/package/ng-confirmation-modal
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+### Installation
 
-## Code scaffolding
+```npm install --save angular-confirm-modal```
 
-Run `ng generate component component-name --project AngularConfirmModal` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project AngularConfirmModal`.
-> Note: Don't forget to add `--project AngularConfirmModal` or else it will be added to the default project in your `angular.json` file. 
+```javascript
+ import { AngularConfirmModalModule } from 'angular-confirm-modal';
 
-## Build
 
-Run `ng build AngularConfirmModal` to build the project. The build artifacts will be stored in the `dist/` directory.
+ imports: [
+  AngularConfirmModalModule.forRoot({
+   //optional global config
 
-## Publishing
+   //confirmBtnClass: 'btn btn-success',
+   //confirmBtnText: 'Confirm',
+   //cancelBtnClass: 'btn btn-danger',
+   //cancelBtnText: 'Cancel',
+   //modalSize: 'lg',
+   //modalClass: 'some-modal-class'
+  })
+ ]
+```
 
-After building your library with `ng build AngularConfirmModal`, go to the dist folder `cd dist/angular-confirm-modal` and run `npm publish`.
+### Usage
 
-## Running unit tests
+```html
+ <a
+  angularConfirmModal
+  [title]="'Confirm'"
+  [message]="'Are you sure kiddo?'"
+  [options]="options"
+  (onConfirm)="confirmed()"
+  (onCancel)="cancelled()"
+ >
+  Delete some very important stuff
+ </a>
+```
 
-Run `ng test AngularConfirmModal` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```javascript
+ options: any = {
+ 	confirmBtnClass: 'btn btn-success',      //DEFAULT VALUE
+  confirmBtnText: 'Confirm',      				//DEFAULT VALUE
+  cancelBtnClass: 'btn btn-danger',      //DEFAULT VALUE
+  cancelBtnText: 'Cancel',      				//DEFAULT VALUE
+  modalSize: 'lg',      							 //DEFAULT VALUE
+  modalClass: ''      								//DEFAULT VALUE
+ }
 
-## Further help
+ confirmed() {
+  console.log('confirmed');
+ }
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ cancelled() {
+  console.log('cancelled');
+ }
+
+```
+
+
+### Todo
+Done in a rush because couldn't find anything alike, so:
+
+- ~~Add options to set classes and stuff~~
+- Make some tests
+- ~~Set some global configs for messages and texts and classes and w/e~~
+- Have the way of setting config reviewed because I just went with my gut
+
