@@ -57,8 +57,11 @@ export class AngularConfirmModalDirective {
       case 'sm':
         modalOptions.size = 'sm';
         break;
-      default:
+      case 'lg':
         modalOptions.size = 'lg';
+        break;
+      default:
+        modalOptions.size = 'md';
         break;
     }
 

@@ -11,7 +11,7 @@ export class AppComponent {
 	  //confirmBtnText: 'Confirm',      				//DEFAULT VALUE
 	  cancelBtnClass: 'btn btn-danger',      //DEFAULT VALUE
 	  cancelBtnText: 'Cancel',      				//DEFAULT VALUE
-	  modalSize: 'lg',      							 //DEFAULT VALUE
+	  modalSize: 'md',      							 //DEFAULT VALUE
 	  modalClass: ''      								//DEFAULT VALUE
 	 }
 
