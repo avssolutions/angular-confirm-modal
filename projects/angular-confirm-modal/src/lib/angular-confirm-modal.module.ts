@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularConfirmModalDirective } from './angular-confirm-modal.directive';
 import { AngularConfirmModalContentComponent } from './angular-confirm-modal-content.component';
 import { AngularConfirmModalConfig } from './angular-confirm-modal.config';
+import { AngularConfirmModalTestHelper } from 'angular-confirm-modal/public-api';
 
 @NgModule({
   imports: [
@@ -15,10 +16,12 @@ import { AngularConfirmModalConfig } from './angular-confirm-modal.config';
   ],
   declarations: [
     AngularConfirmModalDirective,
+    AngularConfirmModalTestHelper,
     AngularConfirmModalContentComponent
   ],
   exports: [
-    AngularConfirmModalDirective
+    AngularConfirmModalDirective,
+    AngularConfirmModalTestHelper
   ],
   entryComponents: [AngularConfirmModalContentComponent],
   providers: []
