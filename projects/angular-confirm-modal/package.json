@@ -1,6 +1,6 @@
 {
   "name": "angular-confirm-modal",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "types": "./dist/angular-confirm-modal/angular-confirm-modal.d.ts",
   "main": "index.ts",
   "scripts": {
