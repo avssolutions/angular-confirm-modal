@@ -4,4 +4,4 @@
 
 export * from './lib/angular-confirm-modal.module';
 export { AngularConfirmModalModule } from './lib/angular-confirm-modal.module';
-export { AngularConfirmModalTestHelper } from './lib/angular-confirm-modal-test-helper';
+export { confirmDialog } from './lib/angular-confirm-modal-test-helper';
